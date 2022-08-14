@@ -56,7 +56,7 @@ ROOT_URLCONF = 'widgets.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'templates')],
+        'DIRS': [os.path.join(BASE_DIR,'templates')], #[os.path.join(BASE_DIR, r"widgets\react_stuff\frontend\build")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -123,3 +123,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+STATIC_URL =  'static/' #os.path.join(BASE_DIR,'static/')
+#STATIC_ROOT = os.path.join(BASE_DIR, "widgets/react_stuff/frontend/build/static")
+#STATICFILES_DIR = [os.path.join(BASE_DIR, r"widgets\react_stuff\frontend\build\static")]
