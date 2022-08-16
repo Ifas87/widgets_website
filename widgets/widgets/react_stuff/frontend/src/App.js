@@ -4,6 +4,21 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      <div className="buffer"> <h1 className='title'>Widgets</h1> </div>
+      <div className="content">
+        <div className="row"></div>
+        <div className="row"></div>
+      </div>
+    </div>
+  );
+}
+
+export default App;
+
+/*
+function App() {
+  return (
+    <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -21,5 +36,4 @@ function App() {
     </div>
   );
 }
-
-export default App;
+*/
