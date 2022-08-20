@@ -1,5 +1,5 @@
 import './App.css';
-import Calc from './calc'
+import Calc from './Calc/Calc'
 
 function App() {
   return (
