@@ -1,5 +1,6 @@
 import './App.css';
-import Calc from './Calc/Calc'
+import Calc from './Calc/Calc';
+import Notes from './note_taking/notes';
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <div className="content">
         <div className="row">
           <div className='elementA'><Calc /></div>
-          <div className='elementB'></div>
+          <div className='elementB'><Notes /></div>
         </div>
         
         <div className="row">
