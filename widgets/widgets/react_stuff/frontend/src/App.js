@@ -1,6 +1,7 @@
 import './App.css';
 import Calc from './Calc/Calc';
 import Notes from './note_taking/notes';
+import Conv from './currencyConv/Conv.js';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         </div>
         
         <div className="row">
-          <div className='elementC'></div>
+          <div className='elementC'><Conv /></div>
           <div className='elementD'></div>
         </div>
       </div>
