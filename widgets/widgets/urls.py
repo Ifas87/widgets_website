@@ -16,10 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from .views import index_view
+from .views import ajax_view
 from . import consumers
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index_view),
+    path('export/', ajax_view),
 ]
