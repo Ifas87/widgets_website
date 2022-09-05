@@ -23,5 +23,5 @@ from . import consumers
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index_view),
-    path('export/', ajax_view),
+    path('export', ajax_view),
 ]
