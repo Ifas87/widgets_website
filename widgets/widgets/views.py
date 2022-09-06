@@ -14,10 +14,11 @@ def index_view(request):
 def ajax_view(request):
     request_message = json.load(request)
 
-    with open('ToDo.txt', 'a') as f:
+    with open('ToDo.txt', 'a+') as f:
         for i in request_message['data']:
             f.write( f"{i}\n" )
+        file_data = f.read()
     
-    response = FileResponse(open("ToDo.txt", 'r'))
-
+    #response = FileResponse(file_data, as_attachment=True)
+    response = HttpResponse(file_data, 'text/plain')
     return response
