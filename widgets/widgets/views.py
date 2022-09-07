@@ -21,4 +21,4 @@ def ajax_view(request):
     
     #response = FileResponse(file_data, as_attachment=True)
     response = HttpResponse(file_data, 'text/plain')
-    return response
+    return response 
