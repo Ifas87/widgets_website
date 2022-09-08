@@ -9,7 +9,7 @@ from django.http import FileResponse
 def index_view(request):
     return render(request, "index.html")
 
-
+ 
 @csrf_exempt
 def ajax_view(request):
     request_message = json.load(request)
