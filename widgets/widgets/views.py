@@ -17,8 +17,11 @@ def ajax_view(request):
     with open('ToDo.txt', 'a+') as f:
         for i in request_message['data']:
             f.write( f"{i}\n" )
-        file_data = f.read()
     
+    with open('ToDo.txt', 'rb') as f:
+        file_data = f.read()
     #response = FileResponse(file_data, as_attachment=True)
     response = HttpResponse(file_data, 'text/plain')
+    response['Content-Length'] = os.path.getsize('ToDo.txt')
+    response['Content-Disposition'] = 'attachment; filename=ToDo.txt'
     return response 
