@@ -25,6 +25,6 @@ def ajax_view(request):
     response['Content-Length'] = os.path.getsize('ToDo.txt')
     response['Content-Disposition'] = 'attachment; filename=ToDo.txt'
 
-    os.remove("ToDo.txt")
+    os.remove("ToDo.txt") 
 
     return response 
