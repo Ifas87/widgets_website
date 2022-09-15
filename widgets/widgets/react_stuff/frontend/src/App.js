@@ -8,16 +8,16 @@ function App() {
   return (
     <div className="App">
       <div className="buffer"> <h1 className='title'>Widgets</h1> </div>
-      <div className="content">
-        <div className="row">
-          <div className='elementA'><Calc /></div>
-          <div className='elementB'><Notes /></div>
-        </div>
-        
-        <div className="row">
-          <div className='elementC'><Conv /></div>
-          <div className='elementD'><Chat /></div>
-        </div>
+      <div className='buffer'>
+          <div className="row">
+            <div className='element'><Calc /></div>
+            <div className='element'><Notes /></div>
+          </div>
+          
+          <div className="row">
+            <div className='element'><Conv /></div>
+            <div className='element'><Chat /></div>
+          </div>
       </div>
     </div>
   );
