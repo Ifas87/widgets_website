@@ -61,7 +61,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ] 
 
-ROOT_URLCONF = 'widgets.urls'
+ROOT_URLCONF = 'widgets.urls' 
 
 print(BASE_DIR)
 
